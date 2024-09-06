@@ -720,7 +720,7 @@ app.get("/complete-payment", async (req, res) => {
         });
 
         // Redirect to the thank-you page
-        res.redirect(`${process.env.FRONTEND_URL}/home`);
+        res.redirect(`${process.env.FRONTEND_URL}`);
     } catch (error) {
         console.error("Error completing eSewa payment:", error);
         res.status(500).json({
